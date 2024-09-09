@@ -1,0 +1,212 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Python Documentation Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Nanum+Gothic&family=Poiret+One&family=Righteous&display=swap" rel="stylesheet">
+</head>
+<main id="main-doc">
+  <nav id="navbar">
+    <header>
+      <h1 class="mainheading">Python Documentation</h1><hr>
+    </header>
+      <a class="nav-link" href="#Intro_to_Python">Intro to Python</a><br><hr>
+      <a class="nav-link" href="#Basic_Syntax_and_Operations">Basic Syntax and Operations</a><br><hr>
+      <a class="nav-link" href="#Control_Flow">Control Flow</a><br><hr>
+      <a class="nav-link" href="#Data_Structures">Data Structures</a><br><hr>
+      <a class="nav-link" href="#Functions">Functions</a><br><hr>
+      <a class="nav-link" href="#Object_Oriented_Programming_(OOP)">Object Oriented Programming (OOP)</a><hr>
+    </nav>
+  </header>
+  <section class="main-section" id="Intro_to_Python">
+    <header>
+      <h1 class="headingone">Intro to Python</h1>
+    </header>
+    <h4>What is Python</h4>
+    <p>Python is a high-level, interpreted, general-purpose programming language. It’s designed with an emphasis on code readability and simplicity, making it a great language for beginners and professionals alike.</p>
+    <h4>Why Python?</h4>
+    <p>Python is popular due to its simplicity, versatility, and extensive libraries and frameworks. It has a large community, which makes it easier to find resources, support, and libraries for various tasks. Python's syntax is clean and easy to learn, making it an ideal language for beginners and professionals alike.</p>
+  </section>
+  <section class="main-section" id="Basic_Syntax_and_Operations">
+    <header>
+      <h1>Basic Syntax and Operations</h1>
+    </header>
+    <h4>Variables and Data Types</h4>
+    <p>Variables are used to store data. Python is dynamically typed, so you don't need to declare a variable type.</p>
+    <p>Data Types:</p> 
+    <ul>
+      <li>Integers (int)</li>
+      <li>Floating-Point Numbers (float)</li>
+      <li>Strings (str)</li>
+      <li>Booleans (bool)</li>
+      <li>NoneType (none)</li>
+    </ul>
+    <h5>Code Example:</h5>
+    <code>name = "Riddhima" # string</br>age = "19" # integer</br>height = "5.6" # float</br>is_student = "true" # boolean</code>
+    <h4>Basic Operators</h4>
+    <p>Arithmetic Operators:</p>
+    <ul>
+      <li>Addition (+)</li>
+      <li>Subtraction (-)</li>
+      <li>Multiplcation (*)</li>
+      <li>Division (/)</li>
+      <li>Exponentiation (**)</li>
+      <li>Modulus (%)</li>
+    </ul>
+    <p>Comparison Operators:</p>
+    <ul>
+      <li>Equal to (==)</li>
+      <li>Not equal to (!=)</li>
+      <li>Greater than (>)</li>
+      <li>Less than (<)</li>
+      <li>Greater than or equal to (>=)</li>
+      <li>Less than or equal to (<=)</li>
+    </ul>
+    <p>Logical Operators:</p>
+    <ul>
+      <li>'and'</li>
+      <li>'or'</li>
+      <li>'not'</li>
+    </ul>
+    <h4>Input and Output</h4>
+    <p>The 'input()' function is used to get user input, and 'print()' is used for output.</p>
+    <h5>Code Example:</h5>
+    <code>name = input("Enter your name: ")<br>print("Hello, " + name)</code>
+    <h4>Comments</h4>
+    <p>Comments incule single-line comments ('# This is a comment') or multi-line comment (''''This is a comment'''').</p>
+    <h5>Code Example:</h5>
+    <code># This is a single-line comment<br><br>
+"""<br>This is a <br>multi-line comment<br>"""</code>
+  </section>
+  <section class="main-section" id="Control_Flow">
+    <header>
+      <h1>Control Flow</h1>
+    </header>
+    <h4>Conditional Statements</h4>
+    <p>Conditional statements allow you to execute code based on certain conditions.</h4>
+    <h5>Code Example:</h5>
+    <code>if age >= 18:<br>&nbsp&nbspprint("You are an adult.")<br>elif age > 12:<br>&nbsp&nbspprint("You are a teenager.")<br>else:<br>&nbsp&nbspprint("You are a child.")</code>
+    <h4>Loops</h4>
+    <p>Loops are used to execute a block of code repeatedly. For loops iterates over a sequence. While loops repeat as long as the condition is true.</p>
+    <h5>Code Example:</h5>
+    <code>for i in range(5):<br>&nbsp&nbspprint(i)&nbsp# Prints 0 to 4</code>
+    <code>count = 0<br>while count < 5:<br>&nbsp&nbspprint(count)<br>&nbsp&nbspcount += 1</code>
+  </section>
+  <section class="main-section" id="Data_Structures">
+    <header>
+      <h1>Data Structures</h1>
+    </header>
+    <h4>Lists</h4>
+    <p>Lists are ordered, mutable collections of items. They can hold mixed data types.</p>
+    <h5>Code Example:</h5>
+    <code>fruits = ["apple", "banana", "cherry"]</code>
+    <h4>Tuples</h4>
+    <p>Tuples are ordered, immutable collections. They are similar to lists but cannot be changed after creation.</p>
+    <h5>Code Example:</h5>
+    <code>coordinates = (10, 20)</code>
+    <h4>Dictionaries</h4>
+    <p>Dictionaries are unordered, mutable collections of key-value pairs.</p>
+    <h5>Code Example:</h5>
+    <code>student = {"name": "Alice", "age": 25, "courses": ["Math", "Science"]}</code>
+    <h4>Sets</h4>
+    <p>Sets are unordered collections of unique items.</p>
+    <h5>Code Example:</h5>
+    <code>numbers = {1, 2, 3, 4, 4, 5}</code>
+  </section>
+  <section class="main-section" id="Functions">
+    <header>
+      <h1>Functions</h1>
+    </header>
+    <p>Functions are reusable blocks of code that perform a specific task. Functions can take parameters and return values. Functions can have default parameter values and can be called with keyword arguments. Variables defined inside a function are local to that function.</p>
+    <h5>Code Example:</h5>
+    <code>def add(a, b):<br>&nbsp&nbspreturn a + b<br>result = add(3, 4)&nbsp  # result is 7</code>
+  </section>
+  <section class="main-section" id="Object_Oriented_Programming_(OOP)">
+    <header>
+      <h1>Object Oriented Programming (OOP)</h1>
+    </header>
+    <h4>Classes and Objects</h4>
+    <p>Python supports object-oriented programming, allowing you to define classes and create objects.</p>
+    <h5>Code Example:</h5>
+    <code>class Dog:<br>&nbsp&nbspdef __init__(self, name, age):<br>&nbsp&nbsp&nbsp&nbspself.name = name<br>&nbsp&nbsp&nbsp&nbspself.age = age<br><br>&nbsp&nbspdef bark(self):<br>&nbsp&nbsp&nbsp&nbspreturn f"{self.name} says Woof!"<br><br>my_dog = Dog("Buddy", 3)<br>print(my_dog.bark())&nbsp  # Buddy says Woof!</code>
+    <h4>Inheritance</h4>
+    <p>Classes can inherit properties and methods from other classes.</p>
+    <h4>Encapsulation</h4>
+    <p>Encapsulation restricts access to certain attributes or methods, using underscores to denote private members.</p>
+    <h4>Polymorphism</h4>
+    <p>Polymorphism allows different classes to implement the same method in different ways.</p>
+  </section>
+  </main>
+
+** end of undefined **
+
+** start of undefined **
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200px;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+}
+.main-section {
+  margin-left: 210px;
+  padding-left: 20px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+.nav-link {
+  font-size: 17;
+  text-decoration: none;
+}
+a {
+  color: black;
+}
+a:hover {
+  color: #55AD9B;
+}
+a:active {
+  color: black;
+}
+h1 {
+  background-color: #95D2B3;
+  color: black;
+  font-weight: bold;
+  padding: 2px; 
+  border-radius: 3px;
+}
+h4 {
+  background-color: #D8EFD3;
+  color: black;
+  font-weight: bold;
+  padding: 2px; 
+  border-radius: 3px;
+}
+h5 {
+  background-color: #EEE7DA;
+  color: black;
+  font-weight: bold;
+  padding: 2px; 
+  border-radius: 3px;
+}
+.mainheading {
+  background-color: white;
+}
+* {
+  font-family: nanum gothic;
+}
+
+** end of undefined **
+
